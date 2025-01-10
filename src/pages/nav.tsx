@@ -4,7 +4,7 @@ import "../styles/globals.css";
 const Nav = () => {
   return (
     <>
-      <div className="mx-auto nav">
+      <div className="mx-auto nav sticky top-0 bg-white shadow-md z-50">
         <nav className="flex justify-between ">
           <a href="./" className="nav-logo p-2">
             R&R Cleaning Co.
@@ -14,7 +14,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-300 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 Home
@@ -23,7 +23,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-300 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 Services
@@ -32,7 +32,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-md transition-all duration-300 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 About

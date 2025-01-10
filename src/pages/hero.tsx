@@ -12,17 +12,14 @@ const Hero = () => {
             <h1 className="text-white text-2xl pb-5">
               Expert Cleaning Services for Homes, Offices, and Construction Sites.
             </h1>
-            <p className="text-white text-sm pb-20">
+            <p className="text-white text-md pb-20">
               Raven and Rebel Cleaning Co. specializes in comprehensive cleaning solutions,
               including pre-occupation and post-occupation services, for homes, offices, and
               construction sites. Our dedicated team ensures every space is spotless, making
               transitions seamless and creating cleaner, more comfortable environments.
             </p>
-            <button
-              className="flex items-center justify-center bg-green-400 pr-10 pl-10 pb-7 pt-7 font-normal hover:font-semibold text-2xl hover:text-3xl rounded-md transition-all duration-500 ease-in-out"
-              style={{ display: "flex", height: "2rem" }}
-            >
-              Get a quote
+            <button className="bg-green-400 px-8 py-4 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-500 ease-in-out">
+              Get your quote now
             </button>
           </div>
           <div className="right-hero w-1/2 h-full relative">
