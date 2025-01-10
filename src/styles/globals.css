@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  width: 95vw;
+  height: 600px;
+  display: flex;
+}
+
+.nav {
+  width: 95vw;
+}
+
+.container {
+  width: 95vw;
+}
