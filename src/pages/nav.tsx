@@ -14,7 +14,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-lime-500 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 Home
@@ -23,7 +23,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-lime-500 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 Services
@@ -32,7 +32,7 @@ const Nav = () => {
             <li className="nav-link p-2">
               <a
                 href="#"
-                className="underline decoration-lime-500 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
+                className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-500 ease-in-out"
                 style={{ display: "inline-block", height: "2rem" }}
               >
                 About
@@ -43,7 +43,7 @@ const Nav = () => {
           <div className="nav-contact p-2">
             <a
               href="#"
-              className="bg-lime-500 hover:bg-lime-500 p-1 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-500 ease-in-out "
+              className="bg-green-400 p-1 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-500 ease-in-out "
             >
               Get a quote
             </a>
