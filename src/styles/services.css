@@ -1,0 +1,72 @@
+/* /* Card style */
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #059669; /* Diagonal gradient from #059669 to #4ade80 */
+  height: 515px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* margin: 0 15px; Add horizontal space between cards */
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #4ade80; /* Mint green background */
+  border-radius: 50%; /* Make the buttons circular */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensure buttons are above the slides */
+  opacity: 0.8; /* Always visible */
+  transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  color: black;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #34d399; /* Darker mint green background on hover */
+}
+
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  color: white; /* White arrow color */
+}
+
+.swiper-button-prev {
+  left: 15px;
+  top: 376px; /* Position the previous button to the left of the cards */
+}
+
+.swiper-button-next {
+  right: 15px; /* Position the next button to the right of the cards */
+  top: 376px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.5; /* Less visible when disabled */
+}
+
+.swiper-slide {
+  margin: 50px 0;
+  /* width: 420px !important; */
+}
+
+.swiper {
+  width: 90vw !important;
+}
+
+.card-style {
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
