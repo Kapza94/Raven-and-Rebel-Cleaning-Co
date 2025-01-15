@@ -2,6 +2,7 @@ import Nav from "./nav";
 import Hero from "./hero";
 import Services from "./services";
 import Testimonials from "./testimonials";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Testimonials />
+      <About />
     </>
   );
 }

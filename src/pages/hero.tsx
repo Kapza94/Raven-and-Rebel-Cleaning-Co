@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/globals.css";
 import Image from "next/image";
+import "../styles/hero.css";
 
 const Hero = () => {
   return (
@@ -32,6 +33,18 @@ const Hero = () => {
             className="rounded-lg"
           />
         </div>
+      </div>
+      <div className="bubbles">
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
       </div>
     </div>
   );

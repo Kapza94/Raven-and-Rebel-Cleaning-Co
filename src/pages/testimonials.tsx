@@ -10,7 +10,7 @@ const Testimonials = () => {
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}
@@ -32,13 +32,13 @@ const Testimonials = () => {
             </p>
           </div>
           <p className="text-md font-semibold mt-4">
-            Thandi <span className="text-sm font-light"> ~~from Sandton</span>
+            Thandi <span className="text-sm font-light"> ~~ from Sandton</span>
           </p>
         </div>
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}
@@ -60,13 +60,13 @@ const Testimonials = () => {
             </p>
           </div>
           <p className="text-md font-semibold mt-4">
-            Jonothan <span className="text-sm font-light"> ~~from Rosebank</span>
+            Jonothan <span className="text-sm font-light"> ~~ from Rosebank</span>
           </p>
         </div>
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}
@@ -88,13 +88,13 @@ const Testimonials = () => {
             </p>
           </div>
           <p className="text-md font-semibold mt-4">
-            Mandla <span className="text-sm font-light"> ~~from Melrose Arch</span>
+            Mandla <span className="text-sm font-light"> ~~ from Melrose Arch</span>
           </p>
         </div>
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}
@@ -116,13 +116,13 @@ const Testimonials = () => {
             </p>
           </div>
           <p className="text-md font-semibold mt-4">
-            Thandi <span className="text-sm font-light"> ~~from Sandton</span>
+            Nadia <span className="text-sm font-light"> ~~ from Midrand</span>
           </p>
         </div>
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}
@@ -139,18 +139,18 @@ const Testimonials = () => {
             />
             <p className="text-sm mt-2">
               Our carpets were looking tired and dull, but Raven and Rebel Cleaning Co brought them
-              back to life! Their carpet cleaning service in Bryanston was efficient, eco-friendly,
-              and left our home feeling brand new
+              back to life! Their carpet cleaning service was efficient, eco-friendly, and left our
+              home feeling brand new. Best cleaners in Joburg!
             </p>
           </div>
           <p className="text-md font-semibold mt-4">
-            Raj <span className="text-sm font-light"> ~~from Bryanston</span>
+            Raj <span className="text-sm font-light"> ~~ from Bryanston</span>
           </p>
         </div>
         <div className="grid-item p-6 bg-white rounded-lg shadow-md flex flex-col justify-between">
           <div className="flex justify-center">
             <Image
-              className="quote-icon"
+              className="quote-icon filter-green"
               src="/icons/message.png"
               width={24}
               height={24}

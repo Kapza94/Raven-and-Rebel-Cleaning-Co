@@ -19,7 +19,7 @@ const Services = () => {
   return (
     <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       <div className="pt-5 pb-5 w-full bg-gray-300 rounded-lg">
-        <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 mt-6">Our Services</h1>
         <p className="text-center text-lg text-gray-700 mb-8">
           Discover our range of professional cleaning services designed to keep your spaces spotless
           and inviting.
