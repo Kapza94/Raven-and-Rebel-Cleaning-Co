@@ -1,6 +1,7 @@
 import Nav from "./nav";
 import Hero from "./hero";
 import Services from "./services";
+import Testimonials from "./testimonials";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Services />
+      <Testimonials />
     </>
   );
 }
