@@ -7,6 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -19,4 +23,16 @@ body {
 
 .container {
   width: 95vw;
+}
+
+.color-mint {
+  background-color: #48ccaa;
+}
+
+.dark-mint {
+  background-color: #37977e;
+}
+
+.dark-mint-decoration {
+  text-decoration-color: #37977e;
 }

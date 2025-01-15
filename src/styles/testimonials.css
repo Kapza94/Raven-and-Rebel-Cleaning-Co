@@ -12,5 +12,5 @@
 }
 
 .filter-green {
-  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(100%) contrast(100%);
+  filter: invert(66%) sepia(25%) saturate(500%) hue-rotate(120deg) brightness(95%) contrast(90%);
 }

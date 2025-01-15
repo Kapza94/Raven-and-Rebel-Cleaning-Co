@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import "../styles/about.css";
 
 const About = () => {
   return (
     <>
       <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
         <Image
-          className="rounded-full border-solid border-4 border-green-400 hover:border-dashed transform hover:scale-105 transition-transform duration-200"
+          className="about-us-color rounded-full  hover:border-solid transform hover:scale-105 transition-transform duration-200"
           src="/about/AboutUsPic.jpg"
           width={200}
           height={200}

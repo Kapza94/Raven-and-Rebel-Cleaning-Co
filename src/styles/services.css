@@ -3,7 +3,7 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #059669; /* Diagonal gradient from #059669 to #4ade80 */
+  background-color: #37977e; /* Diagonal gradient from #059669 to #4ade80 */
   height: 550px;
   color: white;
   display: flex;
@@ -16,7 +16,7 @@
 /* Custom styles for Swiper navigation buttons */
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: #4ade80; /* Mint green background */
+  background-color: #48ccaa; /* Mint green background */
   border-radius: 50%; /* Make the buttons circular */
   width: 30px;
   height: 30px;
@@ -33,7 +33,9 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #34d399; /* Darker mint green background on hover */
+  background-color: white; /* Darker mint green background on hover */
+  width: 32px;
+  height: 32px;
 }
 
 .swiper-button-prev:before,
@@ -73,7 +75,7 @@
 
 .promo-item {
   border-radius: 100px;
-  background-color: #4ade80;
+  background-color: #48ccaa;
   padding: 1rem;
   padding: 1.5rem 4rem;
 }

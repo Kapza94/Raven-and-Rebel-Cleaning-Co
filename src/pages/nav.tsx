@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/globals.css";
+import Image from "next/image";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +12,8 @@ const Nav = () => {
   return (
     <div className="pt-2 pb-2 mx-auto nav sticky top-0 bg-white shadow-md z-50">
       <nav className="flex justify-between items-center px-4 md:px-8">
-        <a href="./" className="font-extrabold text-xl nav-logo p-2">
-          R&R Cleaning Co.
+        <a href="./" className="font-extrabold text-xl nav-logo">
+          <Image className="pr-2" src="/icons/R&R.png" width={100} height={50} alt="People icon" />
         </a>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
@@ -39,32 +40,32 @@ const Nav = () => {
         >
           <li className="nav-link p-2">
             <a
-              href="#"
-              className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              href="#hero"
+              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Home
             </a>
           </li>
           <li className="nav-link p-2">
             <a
-              href="#"
-              className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              href="#services"
+              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Services
             </a>
           </li>
           <li className="nav-link p-2">
             <a
-              href="#"
-              className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              href="#about"
+              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               About
             </a>
           </li>
           <li className="nav-link p-2">
             <a
-              href="#"
-              className="underline decoration-green-400 underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              href="#contact"
+              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Contact
             </a>
