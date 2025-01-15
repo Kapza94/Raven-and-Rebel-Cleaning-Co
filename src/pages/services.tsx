@@ -17,15 +17,70 @@ const Services = () => {
   }, []);
   return (
     <>
-      <div className="container mx-auto px-4 py-8 flex flex-col items-start">
-        <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>{" "}
+      <div className="container mx-auto px-4 py-8 flex flex-col items-start bg-gray-100 rounded-lg">
+        <div className="pt-5 pb-5 w-full bg-gray-300 rounded-lg">
+          <h1 className="text-4xl font-bold text-center mb-8">Our Services</h1>
+          <p className="text-center text-lg text-gray-700 mb-8">
+            Discover our range of professional cleaning services designed to keep your spaces
+            spotless and inviting.
+          </p>
+          <div className="flex justify-around items-center mb-8">
+            <div className="promo-item flex items-center justify-center">
+              <Image
+                className="pr-2"
+                src="/icons/house-icon.png"
+                width={30}
+                height={30}
+                alt="House icon"
+              />
+              <h3 className="text-xl">
+                100+<span className="text-base"> Houses cleaned</span>
+              </h3>
+            </div>
+            <div className="promo-item flex items-center justify-center">
+              <Image
+                className="pr-2"
+                src="/icons/office-icon.png"
+                width={30}
+                height={30}
+                alt="Office icon"
+              />
+              <h3 className="text-xl">
+                50+<span className="text-base"> Offices cleaned</span>
+              </h3>
+            </div>
+            <div className="promo-item flex items-center justify-center">
+              <Image
+                className="pr-2"
+                src="/icons/people-icon.png"
+                width={30}
+                height={30}
+                alt="People icon"
+              />
+              <h3 className="text-xl">
+                200+<span className="text-base"> Happy Customers</span>
+              </h3>
+            </div>
+            <div className="promo-item flex items-center justify-center">
+              <Image
+                className="pr-2"
+                src="/icons/quote-icon.png"
+                width={30}
+                height={30}
+                alt="Office icon"
+              />
+              <h3 className="text-xl">
+                300+<span className="text-base"> Custom Quotes Provided</span>
+              </h3>
+            </div>
+          </div>
+        </div>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
           loop={true}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
@@ -115,7 +170,6 @@ const Services = () => {
               </p>
             </div>
           </SwiperSlide>
-          ...
         </Swiper>
       </div>
     </>

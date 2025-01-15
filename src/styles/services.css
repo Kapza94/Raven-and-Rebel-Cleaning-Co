@@ -70,3 +70,10 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.promo-item {
+  border-radius: 100px;
+  background-color: #4ade80;
+  padding: 1rem;
+  padding: 1.5rem 4rem;
+}
