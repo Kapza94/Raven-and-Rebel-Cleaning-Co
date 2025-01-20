@@ -3,6 +3,7 @@ import Hero from "./hero";
 import Services from "./services";
 import Testimonials from "./testimonials";
 import AboutUs from "./about";
+import Footer from "./footer";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -24,6 +25,9 @@ export default function Home() {
       </div>
       <div id="testimonials">
         <Testimonials />
+      </div>
+      <div id="footer">
+        <Footer />
       </div>
     </>
   );
