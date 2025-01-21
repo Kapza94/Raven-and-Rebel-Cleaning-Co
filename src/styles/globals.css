@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@import "./hero.css";
-@import "./nav.css";
-@import "./services.css";
-@import "./testimonials.css";
-@import "./footer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,4 +31,224 @@ body {
 
 .dark-mint-decoration {
   text-decoration-color: #37977e;
+}
+
+/*hero*/
+.quote-button {
+  border: 2px solid #37977e;
+  color: #18493c;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in-out;
+}
+
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 12s;
+}
+
+.bubble:nth-child(3) {
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(4) {
+  left: 40%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 14s;
+}
+
+.bubble:nth-child(5) {
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  animation-duration: 9s;
+}
+
+.bubble:nth-child(6) {
+  left: 60%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 11s;
+}
+
+.bubble:nth-child(7) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 13s;
+}
+
+.bubble:nth-child(8) {
+  left: 80%;
+  width: 60px;
+  height: 60px;
+  animation-duration: 10s;
+}
+
+.bubble:nth-child(9) {
+  left: 90%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 12s;
+}
+
+.bubble:nth-child(10) {
+  left: 95%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 15s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+/*services*/
+/* /* Card style */
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #37977e; /* Diagonal gradient from #059669 to #4ade80 */
+  height: 550px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* margin: 0 15px; Add horizontal space between cards */
+}
+
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #48ccaa; /* Mint green background */
+  border-radius: 50%; /* Make the buttons circular */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensure buttons are above the slides */
+  opacity: 0.8; /* Always visible */
+  transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  color: black;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: white; /* Darker mint green background on hover */
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button-prev:before,
+.swiper-button-next:before {
+  color: white; /* White arrow color */
+}
+
+.swiper-button-prev {
+  left: 15px;
+  top: 376px; /* Position the previous button to the left of the cards */
+}
+
+.swiper-button-next {
+  right: 15px; /* Position the next button to the right of the cards */
+  top: 376px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.5; /* Less visible when disabled */
+}
+
+.swiper-slide {
+  margin: 50px 0;
+  /* width: 420px !important; */
+}
+
+.swiper {
+  width: 90vw !important;
+}
+
+.card-style {
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-item {
+  border-radius: 100px;
+  background-color: #48ccaa;
+  padding: 1rem;
+  padding: 1.5rem 4rem;
+}
+
+/*about*/
+.about-us-color {
+  border: 3px solid #48ccaa;
+}
+
+/*testimonials*/
+.grid-item {
+  height: 250px;
+  width: 450px;
+  background-color: white;
+  border: 2px solid #f1f1f1;
+  border-radius: 30px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.filter-green {
+  filter: invert(66%) sepia(25%) saturate(500%) hue-rotate(120deg) brightness(95%) contrast(90%);
+}
+
+/*contact*/
+
+/*footer*/
+.text-smallest {
+  font-size: 11px;
 }
