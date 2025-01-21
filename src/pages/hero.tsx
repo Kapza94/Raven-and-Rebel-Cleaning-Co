@@ -22,13 +22,15 @@ const Hero = () => {
             Get your quote now
           </button>
         </div>
-        <div className="right-hero w-full md:w-1/2 h-64 md:h-full relative">
-          <Image
-            src={"/hero/HeroMain2.jpg"}
-            alt="Image of man cleaning office balcony glass"
-            fill
-            className="rounded-lg"
-          />
+        <div className=" right-hero w-full md:w-1/2 h-64 md:h-full relative">
+          <div className="relative w-full h-full rounded-lg overflow-hidden">
+            <Image
+              src="/hero/HeroMain2.jpg"
+              alt="Image of man cleaning office balcony glass"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
       <div className="bubbles">
