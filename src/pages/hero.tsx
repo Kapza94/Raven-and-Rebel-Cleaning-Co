@@ -27,7 +27,9 @@ const Hero = () => {
             src={"/hero/HeroMain2.jpg"}
             alt="Image of clean gloves with some detergent next to it."
             fill
-            objectFit="cover"
+            style={{
+              objectFit: "contain",
+            }}
             className="rounded-lg"
           />
         </div>
