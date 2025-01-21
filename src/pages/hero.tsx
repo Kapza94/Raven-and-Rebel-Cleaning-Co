@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
         <div className="right-hero w-full md:w-1/2 h-64 md:h-full relative">
           <Image
-            src={"/hero/heroMain2.jpg"}
+            src={"/hero/HeroMain2.jpg"}
             alt="Image of clean gloves with some detergent next to it."
-            layout="fill"
+            fill
             objectFit="cover"
             className="rounded-lg"
           />
