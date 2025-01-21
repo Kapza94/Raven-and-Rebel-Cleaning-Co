@@ -26,8 +26,7 @@ const Hero = () => {
           <Image
             src={"/hero/HeroMain2.jpg"}
             alt="Image of man cleaning office balcony glass"
-            layout="fill"
-            objectFit="cover"
+            fill
             className="rounded-lg"
           />
         </div>
