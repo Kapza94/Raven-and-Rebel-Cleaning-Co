@@ -25,11 +25,9 @@ const Hero = () => {
         <div className="right-hero w-full md:w-1/2 h-64 md:h-full relative">
           <Image
             src={"/hero/HeroMain2.jpg"}
-            alt="Image of clean gloves with some detergent next to it."
-            fill
-            style={{
-              objectFit: "contain",
-            }}
+            alt="Image of man cleaning office balcony glass"
+            layout="fill"
+            objectFit="cover"
             className="rounded-lg"
           />
         </div>
