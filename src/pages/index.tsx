@@ -5,6 +5,7 @@ import Testimonials from "./testimonials";
 import AboutUs from "./about";
 import Footer from "./footer";
 import { useEffect } from "react";
+import Contact from "./contact";
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,9 @@ export default function Home() {
       </div>
       <div id="testimonials">
         <Testimonials />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
       <div id="footer">
         <Footer />

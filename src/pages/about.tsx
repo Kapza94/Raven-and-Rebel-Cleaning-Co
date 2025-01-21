@@ -4,10 +4,10 @@ import "../styles/about.css";
 
 const About = () => {
   return (
-    <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-300 rounded-lg">
+    <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       <div className="relative">
         <Image
-          className="rounded-full border-solid border-4 border-green-400 transform hover:scale-105 transition-transform duration-300"
+          className="rounded-full border-solid border-4 about-us-color transform hover:scale-105 transition-transform duration-300"
           src="/about/AboutUsPic.jpg"
           width={200}
           height={200}

@@ -3,6 +3,7 @@
 @import "./nav.css";
 @import "./services.css";
 @import "./testimonials.css";
+@import "./footer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaEnvelope, FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-emerald-700 text-white py-8">
+    <footer className="dark-mint text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           {/* Company Info */}
@@ -85,9 +87,22 @@ const Footer = () => {
                 <FaTiktok size={24} />
               </a>
             </div>
+            <div className="flex justify-center md:justify-end pt-10 rounded-lg">
+              <Image
+                src="/icons/R&R.png"
+                width={150}
+                height={150}
+                alt="Raven and Rebel Logo"
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <p className="text-center mt-8 text-smallest text-gray-800">
+        © {currentYear} Raven and Rebel Cleaning Co | Developed by{" "}
+        <a href="https://github.com/Kapza94">Your Name</a>
+      </p>
     </footer>
   );
 };
