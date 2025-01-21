@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/globals.css";
 import Image from "next/image";
 import "../styles/hero.css";
 
