@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import {
+  scrollToHome,
+  scrolltoServices,
+  scrollToAbout,
+  scrollToContact,
+} from "..//pages/scrollhandlers";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +13,6 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className="pt-2 pb-2 mx-auto nav sticky top-0 bg-white shadow-md z-50">
       <nav className="flex justify-between items-center px-4 md:px-8">
@@ -39,7 +44,7 @@ const Nav = () => {
         >
           <li className="nav-link p-2">
             <a
-              href="#hero"
+              onClick={scrollToHome}
               className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Home
@@ -47,7 +52,7 @@ const Nav = () => {
           </li>
           <li className="nav-link p-2">
             <a
-              href="#services"
+              onClick={scrolltoServices}
               className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Services
@@ -55,7 +60,7 @@ const Nav = () => {
           </li>
           <li className="nav-link p-2">
             <a
-              href="#about"
+              onClick={scrollToAbout}
               className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               About
@@ -63,7 +68,7 @@ const Nav = () => {
           </li>
           <li className="nav-link p-2">
             <a
-              href="#contact"
+              onClick={scrollToContact}
               className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Contact

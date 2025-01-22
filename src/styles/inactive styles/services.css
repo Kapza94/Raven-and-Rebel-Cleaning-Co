@@ -17,7 +17,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   background-color: #48ccaa; /* Mint green background */
-  border-radius: 50%; /* Make the buttons circular */
+  border-radius: 100%; /* Make the buttons circular */
   width: 30px;
   height: 30px;
   display: flex;

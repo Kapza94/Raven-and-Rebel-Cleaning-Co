@@ -1,14 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { scrollToContact } from "./scrollhandlers";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
-
   return (
     <div className="color-mint container flex items-center justify-center h-screen mx-auto px-4 rounded-md relative overflow-hidden">
       <div className="hero flex flex-col md:flex-row w-full h-full relative z-10">
@@ -16,7 +10,7 @@ const Hero = () => {
           <h2 className="text-4xl md:text-7xl font-bold text-white pb-5 md:pb-10">
             Raven and Rebel Cleaning Co.
           </h2>
-          <h1 className="text-xl md:text-2xl text-white pb-3 md:pb-5">
+          <h1 className="text-xl md:text-2xl  text-white pb-3 md:pb-5">
             Expert Cleaning Services for Homes, Offices, and Construction Sites.
           </h1>
           <p className="text-sm md:text-md text-white pb-10 md:pb-20">
