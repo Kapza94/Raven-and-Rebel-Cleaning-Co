@@ -24,3 +24,10 @@ export const scrollToHome = () => {
       contactSection.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
+
+  export const scrollToTestimonials = () => {
+    const testimonialsSection = document.getElementById("testimonials");
+    if (testimonialsSection) {
+      testimonialsSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }

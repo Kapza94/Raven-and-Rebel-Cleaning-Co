@@ -2,6 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaEnvelope, FaTiktok } from "react-icons/fa";
 import Image from "next/image";
+import {
+  scrollToHome,
+  scrollToAbout,
+  scrollToContact,
+  scrolltoServices,
+  scrollToTestimonials,
+} from "../pages/scrollhandlers";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,30 +34,20 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0 text-center">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul>
-              <li className="mb-2">
-                <Link href="#hero" className="hover:underline">
-                  Home
-                </Link>
+              <li onClick={scrollToHome} className="mb-2">
+                <a className="hover:underline">Home</a>
               </li>
-              <li className="mb-2">
-                <Link href="#services" className="hover:underline">
-                  Services
-                </Link>
+              <li onClick={scrolltoServices} className="mb-2">
+                <a className="hover:underline">Services</a>
               </li>
-              <li className="mb-2">
-                <Link href="#about" className="hover:underline">
-                  About Us
-                </Link>
+              <li onClick={scrollToAbout} className="mb-2">
+                <a className="hover:underline">About Us</a>
               </li>
-              <li className="mb-2">
-                <Link href="#testimonials" className="hover:underline">
-                  Testimonials
-                </Link>
+              <li onClick={scrollToTestimonials} className="mb-2">
+                <a className="hover:underline">Testimonials</a>
               </li>
-              <li className="mb-2">
-                <Link href="#contact" className="hover:underline">
-                  Contact Us
-                </Link>
+              <li onClick={scrollToContact} className="mb-2">
+                <a className="hover:underline">Contact Us</a>
               </li>
             </ul>
           </div>

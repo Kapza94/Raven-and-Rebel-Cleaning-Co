@@ -88,8 +88,9 @@ const Contact = () => {
         </div>
         <div className="flex items-center justify-between">
           <button
+            id="submit-button"
             type="submit"
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Send Message
           </button>
