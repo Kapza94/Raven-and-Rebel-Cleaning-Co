@@ -1,44 +1,39 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+// import { error } from "console";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_k4c7qia", // Replace with your EmailJS service ID
-        "template_cyvn6kv", // Replace with your EmailJS template ID
-        formData,
-        "hM7yDtMqp41_dOmUS" // Replace with your EmailJS user ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send message. Please try again later.");
-        }
-      );
+    //EmailJS service ID, template ID, and public Key
+    const serviceId = "service_k4c7qia";
+    const templateId = "template_cyvn6kv";
+    const publicKey = "hM7yDtMqp41_dOmUS";
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    //create a new objec that contains dynamic template parameters
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Raven and Rebel Cleaning Co.",
+      message: message,
+    };
+    //send the email using the emailJS send method
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email was sent successfully", response);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.log("Email was not sent", error);
+      });
   };
 
   return (
@@ -51,10 +46,11 @@ const Contact = () => {
           </label>
           <input
             type="text"
+            placeholder="Your full name here..."
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
@@ -66,9 +62,10 @@ const Contact = () => {
           <input
             type="email"
             id="email"
+            placeholder="Your email here..."
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
@@ -79,9 +76,10 @@ const Contact = () => {
           </label>
           <textarea
             id="message"
+            placeholder="Your message here..."
             name="message"
-            value={formData.message}
-            onChange={handleChange}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />

@@ -31,3 +31,15 @@ export const scrollToHome = () => {
       testimonialsSection.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
+
+  // export const scrollToSection = (sectionId: string) => {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth", block: "center" });
+  //   }
+  // };
+
+
+
+  
+
