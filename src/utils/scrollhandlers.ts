@@ -1,3 +1,4 @@
+
 export const scrollToHome = () => {
     const homePage = document.getElementById("hero");
     if (homePage) {

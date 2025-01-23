@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { scrollToContact } from "./scrollhandlers";
+import { scrollToContact } from "../utils/scrollhandlers";
 
 const Hero = () => {
   return (

@@ -8,7 +8,7 @@ import {
   scrollToContact,
   scrolltoServices,
   scrollToTestimonials,
-} from "../pages/scrollhandlers";
+} from "../utils/scrollhandlers";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

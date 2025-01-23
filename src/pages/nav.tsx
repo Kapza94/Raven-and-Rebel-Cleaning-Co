@@ -5,7 +5,7 @@ import {
   scrolltoServices,
   scrollToAbout,
   scrollToContact,
-} from "..//pages/scrollhandlers";
+} from "../utils/scrollhandlers";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
