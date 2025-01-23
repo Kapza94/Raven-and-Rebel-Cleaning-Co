@@ -20,13 +20,13 @@ const About = () => {
 
       {/* Paragraphs Section */}
       <div className="hidden sm:block">
-        <p className="text-lg text-gray-700 mt-4 text-center">
+        <p className="text-lg text-gray-700 mt-4 px-80 text-center">
           <span className="font-bold">Raven and Rebel Cleaning Co</span> is a professional cleaning
           company that offers a range of services to keep your spaces spotless and inviting. Our
           team of experienced cleaners is dedicated to providing exceptional service to our clients.
           We take pride in our work and strive to exceed your expectations with every clean.
         </p>
-        <p className="text-lg text-gray-700 mt-4 text-center">
+        <p className="text-lg text-gray-700 mt-4 px-80  text-center">
           Our mission is to create clean, healthy, and safe environments for our clients. We believe
           that a clean space is essential for your well-being and productivity. Whether you need
           regular cleaning services for your home or office, we have the expertise to meet your
