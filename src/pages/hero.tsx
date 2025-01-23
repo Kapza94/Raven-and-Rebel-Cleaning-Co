@@ -14,7 +14,7 @@ const Hero = () => {
           <h1 className="text-xl md:text-2xl text-white pb-3 md:pb-5">
             Expert Cleaning Services for Homes, Offices, and Construction Sites.
           </h1>
-          <p className="text-sm md:text-md text-white pb-10 md:pb-20">
+          <p className="text-sm md:text-md text-white pb-5 md:pb-10">
             Raven and Rebel Cleaning Co. specializes in comprehensive cleaning solutions, including
             pre-occupation and post-occupation services, for homes, offices, and construction sites.
             Our dedicated team ensures every space is spotless, making transitions seamless and
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
           <button
             onClick={scrollToContact}
-            className="quote-button bg-white px-6 py-3 md:px-8 md:py-4 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-300 ease-in-out"
+            className="quote-button bg-white px-6  md:px-8 md:py-4 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-300 ease-in-out"
           >
             Get your quote now
           </button>
