@@ -44,7 +44,7 @@ const Services = () => {
               height={40}
               alt="Office icon"
             />
-            <h3 className="text-lg sm:text-xl font-extrabold">
+            <h3 className="text-lg text-white sm:text-xl font-extrabold">
               50+
               <span className="text-sm text-white sm:text-base font-light"> Offices Cleaned</span>
             </h3>

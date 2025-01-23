@@ -358,7 +358,7 @@ body {
 .input-field {
   border: 1px solid #d9d7d7;
   border-radius: 5px;
-  padding: 0.8rem !important;
+  padding: 0.8rem 0.8rem 0.8rem 3rem !important;
   height: auto;
   display: block;
   width: 100%;
@@ -368,6 +368,16 @@ body {
   color: #495057;
   background-clip: padding-box;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-field-msg {
+  padding: 0.8rem !important;
+}
+
+.input-icon {
+  position: absolute;
+  top: 1.1rem;
+  left: 1rem;
 }
 
 /*footer*/

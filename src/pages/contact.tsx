@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaRegEnvelope, FaUser } from "react-icons/fa";
+
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -48,31 +50,39 @@ const Contact = () => {
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name
           </label>
-          <input
-            type="text"
-            placeholder="Full name "
-            id="name"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            required
-          />
+          <div className="relative">
+            <span>
+              <FaUser className="input-icon" />
+            </span>
+            <input
+              type="text"
+              placeholder="Full name "
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              required
+            />
+          </div>
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
           </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Your email here..."
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            required
-          />
+          <div className="relative">
+            <FaRegEnvelope className="input-icon" />
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email here..."
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className=" input-field bg-gray-100 shadow appearance-none border rounded w-full py-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              required
+            />
+          </div>
         </div>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
@@ -84,7 +94,7 @@ const Contact = () => {
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-field-msg bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
