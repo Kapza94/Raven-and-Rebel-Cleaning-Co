@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
+//Util file for scroll handlers
+
 import {
   scrollToHome,
   scrolltoServices,
