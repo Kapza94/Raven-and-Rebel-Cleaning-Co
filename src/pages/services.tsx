@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -88,7 +88,9 @@ const Services = () => {
 
       <Swiper
         className="container mx-auto"
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        speed={2000}
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -195,7 +197,6 @@ const Services = () => {
             </p>
           </div>
         </SwiperSlide>
-        {/* Add more SwiperSlide components as needed */}
       </Swiper>
     </div>
   );
