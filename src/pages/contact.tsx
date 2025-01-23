@@ -50,7 +50,7 @@ const Contact = () => {
           </label>
           <input
             type="text"
-            placeholder="Your full name here..."
+            placeholder="Full name "
             id="name"
             name="name"
             value={name}
