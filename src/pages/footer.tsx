@@ -1,6 +1,6 @@
 import React from "react";
 // import Link from "next/link";
-import { FaFacebook, FaInstagram, FaEnvelope, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaEnvelope, FaTiktok, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import {
   scrollToHome,
@@ -57,7 +57,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center md:justify-end space-x-4">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/share/18Jt5uArSe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
@@ -65,23 +65,31 @@ const Footer = () => {
                 <FaFacebook size={24} />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/ravenandrebelservices?igsh=ZjhkYmx4aWVjeXd5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
               >
                 <FaInstagram size={24} />
               </a>
-              <a href="mailto:info@ravenandrebel.com" className="hover:text-gray-400">
+              <a href="mailto:rrcleaningser@gmail.com" className="hover:text-gray-400">
                 <FaEnvelope size={24} />
               </a>
               <a
-                href="https://www.tiktok.com"
+                href="https://www.tiktok.com/@ravenandrebelservices?_t=ZM-8tIrdYmZcEX&_r=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gray-400"
               >
                 <FaTiktok size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/raven-rebel-service-s/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
+                <FaLinkedin size={24} />
               </a>
             </div>
             <div className="flex justify-center md:justify-end pt-10 rounded-lg">

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-// import { error } from "console";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -20,7 +19,7 @@ const Contact = () => {
       return;
     }
 
-    //create a new objec that contains dynamic template parameters
+    //create a new objec that contains template parameters
     const templateParams = {
       from_name: name,
       from_email: email,
