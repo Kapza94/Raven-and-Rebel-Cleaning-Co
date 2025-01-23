@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -24,10 +24,12 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
+    <div className=" mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       {/* Header Section */}
       <div className="pt-5 pb-5 w-full rounded-lg">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6 mt-6">Our Services</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6 mt-6 text-gray-800">
+          Our Services
+        </h1>
         <p className="text-center text-base sm:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
           Discover our range of professional cleaning services designed to keep your spaces spotless
           and inviting.
@@ -37,50 +39,60 @@ const Services = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="pr-2 w-8 h-8 sm:w-10 sm:h-10"
+              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/house-icon.png"
               width={40}
               height={40}
               alt="House icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              40+<span className="text-sm sm:text-base font-light"> Houses Cleaned</span>
+              40+
+              <span className="text-sm sm:text-base text-gray-800 font-light"> Houses Cleaned</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="pr-2 w-8 h-8 sm:w-10 sm:h-10"
+              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/office-icon.png"
               width={40}
               height={40}
               alt="Office icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              50+<span className="text-sm sm:text-base font-light"> Offices Cleaned</span>
+              50+
+              <span className="text-sm sm:text-base text-gray-800 font-light ">
+                {" "}
+                Offices Cleaned
+              </span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="pr-2 w-8 h-8 sm:w-10 sm:h-10"
+              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/people-icon.png"
               width={40}
               height={40}
               alt="People icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              200+<span className="text-sm sm:text-base font-light"> Happy Clients</span>
+              200+
+              <span className="text-sm sm:text-base text-gray-800 font-light"> Happy Clients</span>
             </h3>
           </div>
-          <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
+          <div className="promo-item flex items-center justify-center  bg-white rounded-lg shadow-sm">
             <Image
-              className="pr-2 w-8 h-8 sm:w-10 sm:h-10"
+              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/quote-icon.png"
               width={40}
               height={40}
               alt="Quote icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              50+<span className="text-sm sm:text-base font-light"> Quotes Provided</span>
+              50+
+              <span className="text-sm sm:text-base text-gray-800 font-light">
+                {" "}
+                Quotes Provided
+              </span>
             </h3>
           </div>
         </div>
@@ -88,7 +100,7 @@ const Services = () => {
 
       <Swiper
         className="container mx-auto"
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
         speed={2000}
         spaceBetween={20}
