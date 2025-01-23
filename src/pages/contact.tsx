@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
+    <div className="mt-10 mb-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-300 rounded-lg">
       <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
       <form onSubmit={handleSubmit} className="w-full max-w-lg">
         <div className="mb-4">

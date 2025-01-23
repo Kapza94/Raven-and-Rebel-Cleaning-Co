@@ -1,5 +1,4 @@
 import React from "react";
-// import Link from "next/link";
 import { FaFacebook, FaInstagram, FaEnvelope, FaTiktok, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import {
@@ -17,37 +16,37 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           {/* Company Info */}
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-3xl font-bold">Raven and Rebel Cleaning Co.</h2>
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+            <h2 className="text-2xl sm:text-3xl font-bold">Raven and Rebel Cleaning Co.</h2>
             <p className="mt-4 text-sm">
               Our mission is to create clean, healthy, and safe environments for our clients. We
               believe that a clean space is essential for your well-being and productivity.
             </p>
-            <div className="mt-4">
+            <div className="mt-4 text-sm">
               <p>Phone: (123) 456-7890</p>
-              <p>Email: info@ravenandrebel.com</p>
-              <p>Address: 123 Clean St, Sparkle City, SC 12345</p>
+              <p>Email: rrcleaningser@gmail.com</p>
+              <p>Address: Alberton</p>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="w-full md:w-1/3 mb-6 md:mb-0 text-center">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul>
               <li onClick={scrollToHome} className="mb-2">
-                <a className="hover:underline">Home</a>
+                <a className="hover:underline cursor-pointer">Home</a>
               </li>
               <li onClick={scrolltoServices} className="mb-2">
-                <a className="hover:underline">Services</a>
+                <a className="hover:underline cursor-pointer">Services</a>
               </li>
               <li onClick={scrollToAbout} className="mb-2">
-                <a className="hover:underline">About Us</a>
+                <a className="hover:underline cursor-pointer">About Us</a>
               </li>
               <li onClick={scrollToTestimonials} className="mb-2">
-                <a className="hover:underline">Testimonials</a>
+                <a className="hover:underline cursor-pointer">Testimonials</a>
               </li>
               <li onClick={scrollToContact} className="mb-2">
-                <a className="hover:underline">Contact Us</a>
+                <a className="hover:underline cursor-pointer">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -92,7 +91,7 @@ const Footer = () => {
                 <FaLinkedin size={24} />
               </a>
             </div>
-            <div className="flex justify-center md:justify-end pt-10 rounded-lg">
+            <div className="flex justify-center md:justify-end pt-8">
               <Image
                 src="/icons/R&R.png"
                 width={150}
@@ -104,9 +103,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center mt-8 text-smallest text-gray-800">
+      <p className="text-center mt-8 text-sm text-gray-300">
         © {currentYear} Raven and Rebel Cleaning Co | Developed by{" "}
-        <a href="https://github.com/Kapza94">Your Name</a>
+        <a href="https://github.com/Kapza94" className="hover:underline">
+          Your Name
+        </a>
       </p>
     </footer>
   );

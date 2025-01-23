@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-//Util file for scroll handlers
-
 import {
   scrollToHome,
   scrolltoServices,
@@ -15,6 +13,7 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className="pt-2 pb-2 mx-auto nav sticky top-0 bg-white shadow-md z-50">
       <nav className="flex justify-between items-center px-4 md:px-8">
@@ -22,7 +21,7 @@ const Nav = () => {
           <Image className="pr-2" src="/icons/R&R.png" width={100} height={50} alt="People icon" />
         </a>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
+          <button onClick={toggleMenu} className="hamburger text-gray-800 focus:outline-none">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -47,7 +46,7 @@ const Nav = () => {
           <li className="nav-link p-2">
             <a
               onClick={scrollToHome}
-              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Home
             </a>
@@ -55,7 +54,7 @@ const Nav = () => {
           <li className="nav-link p-2">
             <a
               onClick={scrolltoServices}
-              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Services
             </a>
@@ -63,7 +62,7 @@ const Nav = () => {
           <li className="nav-link p-2">
             <a
               onClick={scrollToAbout}
-              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               About
             </a>
@@ -71,7 +70,7 @@ const Nav = () => {
           <li className="nav-link p-2">
             <a
               onClick={scrollToContact}
-              className="underline dark-mint-decoration underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Contact
             </a>

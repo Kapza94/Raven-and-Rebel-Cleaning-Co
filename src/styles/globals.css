@@ -17,9 +17,109 @@ body {
   display: flex;
 }
 
-.container {
-  width: 95vw;
+/* nav */
+/* Add these styles to your global CSS file */
+
+.nav {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50;
 }
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.nav-links.flex {
+  max-height: 300px; /* Adjust based on the number of links */
+}
+
+.nav-links a {
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-links a:last-child {
+  border-bottom: none;
+}
+
+.nav-links.md\\:flex {
+  position: static;
+  flex-direction: row;
+  max-height: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.nav-links.md\\:flex a {
+  padding: 0;
+  border: none;
+}
+
+.nav-links.md\\:flex a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    max-height: none;
+  }
+
+  .nav-links a {
+    padding: 0;
+    border: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+/* HERO */
 
 .color-mint {
   background-color: #48ccaa;
@@ -38,15 +138,56 @@ body {
   border: 2px solid #37977e;
   color: #18493c;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.left-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 100%;
+}
+
+.right-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .left-hero {
+    width: 50%;
+  }
+
+  .right-hero {
+    width: 50%;
+    height: 100%;
+  }
+}
 
 .bubbles {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 0;
+  pointer-events: none;
 }
 
 .bubble {
@@ -82,66 +223,39 @@ body {
 
 .bubble:nth-child(4) {
   left: 40%;
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   animation-duration: 14s;
 }
 
 .bubble:nth-child(5) {
   left: 50%;
-  width: 70px;
-  height: 70px;
-  animation-duration: 9s;
+  width: 30px;
+  height: 30px;
+  animation-duration: 16s;
 }
 
 .bubble:nth-child(6) {
   left: 60%;
-  width: 40px;
-  height: 40px;
-  animation-duration: 11s;
-}
-
-.bubble:nth-child(7) {
-  left: 70%;
-  width: 20px;
-  height: 20px;
-  animation-duration: 13s;
-}
-
-.bubble:nth-child(8) {
-  left: 80%;
-  width: 60px;
-  height: 60px;
-  animation-duration: 10s;
-}
-
-.bubble:nth-child(9) {
-  left: 90%;
-  width: 30px;
-  height: 30px;
-  animation-duration: 12s;
-}
-
-.bubble:nth-child(10) {
-  left: 95%;
-  width: 50px;
-  height: 50px;
-  animation-duration: 15s;
+  width: 70px;
+  height: 70px;
+  animation-duration: 18s;
 }
 
 @keyframes rise {
   0% {
     transform: translateY(0);
-    opacity: 1;
+  }
+  50% {
+    transform: translateY(-200px);
   }
   100% {
-    transform: translateY(-1000px);
-    opacity: 0;
+    transform: translateY(0);
   }
 }
 
 /*services*/
-/* /* Card style */
+/* Card style */
 .card {
   padding: 10px;
   border-radius: 10px;
@@ -204,10 +318,6 @@ body {
   /* width: 420px !important; */
 }
 
-.swiper {
-  width: 90vw !important;
-}
-
 .card-style {
   color: white;
   border-radius: 10px;
@@ -215,10 +325,19 @@ body {
 }
 
 .promo-item {
+  flex-direction: column;
+  text-align: center;
   border-radius: 100px;
   background-color: #48ccaa;
   padding: 1rem;
   padding: 1.5rem 4rem;
+}
+
+@media (min-width: 768px) {
+  .promo-item {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 /*about*/
@@ -228,8 +347,6 @@ body {
 
 /*testimonials*/
 .grid-item {
-  height: 250px;
-  width: 450px;
   background-color: white;
   border: 2px solid #f1f1f1;
   border-radius: 30px;
