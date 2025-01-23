@@ -25,20 +25,20 @@ const Services = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              className="whitesmoke-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/house-icon.png"
               width={40}
               height={40}
               alt="House icon"
             />
-            <h3 className="text-lg sm:text-xl font-extrabold">
+            <h3 className="text-lg text-white sm:text-xl font-extrabold">
               40+
-              <span className="text-sm sm:text-base text-gray-800 font-light"> Houses Cleaned</span>
+              <span className="text-sm text-white sm:text-base font-light"> Houses Cleaned</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              className="whitesmoke-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/office-icon.png"
               width={40}
               height={40}
@@ -46,39 +46,33 @@ const Services = () => {
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
               50+
-              <span className="text-sm sm:text-base text-gray-800 font-light ">
-                {" "}
-                Offices Cleaned
-              </span>
+              <span className="text-sm text-white sm:text-base font-light"> Offices Cleaned</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
             <Image
-              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              className="whitesmoke-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/people-icon.png"
               width={40}
               height={40}
               alt="People icon"
             />
-            <h3 className="text-lg sm:text-xl font-extrabold">
+            <h3 className="text-lg text-white sm:text-xl font-extrabold">
               200+
-              <span className="text-sm sm:text-base text-gray-800 font-light"> Happy Clients</span>
+              <span className="text-sm text-white sm:text-base font-light"> Happy Clients</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center  bg-white rounded-lg shadow-sm">
             <Image
-              className="gray-800-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              className="whitesmoke-filter pr-2 w-8 h-8 sm:w-10 sm:h-10 object-contain"
               src="/icons/quote-icon.png"
               width={40}
               height={40}
               alt="Quote icon"
             />
-            <h3 className="text-lg sm:text-xl font-extrabold">
+            <h3 className="text-lg text-white sm:text-xl font-extrabold">
               50+
-              <span className="text-sm sm:text-base text-gray-800 font-light">
-                {" "}
-                Quotes Provided
-              </span>
+              <span className="text-sm text-white sm:text-base font-light"> Quotes Provided</span>
             </h3>
           </div>
         </div>

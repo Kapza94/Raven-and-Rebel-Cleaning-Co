@@ -270,9 +270,9 @@ body {
   /* margin: 0 15px; Add horizontal space between cards */
 }
 
-.gray-800-filter {
-  filter: brightness(0) saturate(100%) invert(16%) sepia(10%) saturate(1741%) hue-rotate(180deg)
-    brightness(93%) contrast(90%);
+.whitesmoke-filter {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(0%) hue-rotate(180deg)
+    brightness(98%) contrast(95%);
 }
 
 /* Custom styles for Swiper navigation buttons */
@@ -321,7 +321,7 @@ body {
   flex-direction: column;
   text-align: center;
   border-radius: 100px;
-  background-color: #48ccaa;
+  background-color: #37977e;
   padding: 1rem 2rem;
 }
 
