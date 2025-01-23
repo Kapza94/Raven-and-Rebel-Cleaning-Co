@@ -4,7 +4,7 @@ import { scrollToContact } from "../utils/scrollhandlers";
 
 const Hero = () => {
   return (
-    <div className="color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
+    <div className="py-5  color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
       <div className="hero flex flex-col-reverse md:flex-row w-full h-full relative z-10">
         {/* Left Section */}
         <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2 ">

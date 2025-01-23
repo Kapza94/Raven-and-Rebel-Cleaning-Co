@@ -53,7 +53,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
+    <div className="mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       <h3 className="text-2xl font-bold mb-6 text-center">See what our clients have to say?</h3>
 
       {/* Grid Layout for Larger Screens */}

@@ -107,7 +107,7 @@ const Services = () => {
           },
         }}
         navigation={{
-          prevEl: "swiper-button-prev",
+          prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
         }}
         pagination={{ clickable: true }}

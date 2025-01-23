@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-10 mb-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-300 rounded-lg">
+    <div className="mx-auto px-4 py-8 flex flex-col items-center bg-white rounded-lg">
       <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
       <form onSubmit={handleSubmit} className="w-full max-w-lg">
         <div className="mb-4">
@@ -55,7 +55,7 @@ const Contact = () => {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
@@ -70,7 +70,7 @@ const Contact = () => {
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
@@ -84,7 +84,7 @@ const Contact = () => {
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="input-field bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>

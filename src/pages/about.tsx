@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-300 rounded-lg">
+    <div className="mx-auto px-4 py-8 flex flex-col items-center bg-white rounded-lg">
       {/* Image Section */}
       <div className="relative">
         <Image
