@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero flex flex-col md:flex-row w-full h-full relative z-10">
         {/* Left Section */}
         <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2">
-          <h2 className="text-4xl md:text-7xl font-bold text-white pb-5 md:pb-10">
+          <h2 className="text-4xl md:text-7xl font-bold text-white pb-5 pt-5 md:pb-10">
             Raven and Rebel Cleaning Co.
           </h2>
           <h1 className="text-xl md:text-2xl text-white pb-3 md:pb-5">
