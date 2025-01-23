@@ -266,6 +266,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  text-align: center;
   /* margin: 0 15px; Add horizontal space between cards */
 }
 
@@ -284,42 +285,30 @@ body {
   z-index: 10; /* Ensure buttons are above the slides */
   opacity: 0.8; /* Always visible */
   transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
-  top: 50%; /* Center vertically */
+  top: 59% !important; /* Center vertically */
   transform: translateY(-50%); /* Center vertically */
+  cursor: pointer !important;
   color: black;
 }
 
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  color: white;
+}
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: white; /* Darker mint green background on hover */
+  background-color: #3d3d3d; /* Darker mint green background on hover */
   width: 32px;
   height: 32px;
 }
 
-/* .swiper-button-prev::before,
-.swiper-button-next::before {
-  color: white;
-  font-size: 1rem !important;
-} */
-
-.swiper-button-next {
-  top: 57% !important;
-  right: 0.6rem !important; /* Position the previous button to the left of the cards */
-}
-
-.swiper-button-prev {
-  top: 57% !important;
-  left: 0.6rem !important;
-}
-
-.swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled {
-  opacity: 0.5; /* Less visible when disabled */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 .swiper-slide {
   margin: 50px 0;
-  /* width: 420px !important; */
 }
 
 .card-style {

@@ -1,33 +1,19 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { Pagination, Scrollbar, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { IoChevronBackCircleOutline, IoChevronForwardCircleOutline } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Image from "next/image";
-import { useEffect } from "react";
 
 const Services = () => {
-  useEffect(() => {
-    // Set the swiper navigation size dynamically if needed
-    const setSwiperNavigationSize = () => {
-      document.documentElement.style.setProperty("--swiper-navigation-size", "20px");
-    };
-
-    setSwiperNavigationSize();
-
-    // Cleanup function to remove the style property if needed
-    return () => {
-      document.documentElement.style.removeProperty("--swiper-navigation-size");
-    };
-  }, []);
-
   return (
     <div className=" mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       {/* Header Section */}
       <div className="pt-5 pb-5 w-full rounded-lg">
-        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6 mt-6 text-gray-800">
+        <h1 className="text-3xl sm:text-4xl font-bold textx-center mb-6 mt-6 text-gray-800">
           Our Services
         </h1>
         <p className="text-center text-base sm:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -101,8 +87,9 @@ const Services = () => {
       <Swiper
         className="container mx-auto"
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-        speed={2000}
+        autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        // speed={2000}
+        // navigation
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -119,7 +106,10 @@ const Services = () => {
             spaceBetween: 40,
           },
         }}
-        navigation
+        navigation={{
+          prevEl: "swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        }}
         pagination={{ clickable: true }}
         loop={true}
       >
@@ -209,6 +199,14 @@ const Services = () => {
             </p>
           </div>
         </SwiperSlide>
+        <>
+          <div className={"swiper-button-prev rounded-right"}>
+            <IoChevronBackCircleOutline />
+          </div>
+          <div className={`swiper-button-next rounded-left `}>
+            <IoChevronForwardCircleOutline />
+          </div>
+        </>
       </Swiper>
     </div>
   );

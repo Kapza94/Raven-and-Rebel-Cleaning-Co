@@ -148,14 +148,14 @@ const Footer = () => {
           <div
             key={i}
             className="bubble absolute bg-white/10 rounded-full"
-            style={{
-              width: `${Math.random() * 40 + 10}px`,
-              height: `${Math.random() * 40 + 10}px`,
-              left: `${Math.random() * 100}%`,
-              bottom: `-${Math.random() * 100}px`, // Start bubbles below the screen
-              animation: `float ${Math.random() * 10 + 5}s linear infinite`,
-              animationDelay: `${Math.random() * 5}s`,
-            }}
+            // style={{
+            //   width: `${Math.random() * 40 + 10}px`,
+            //   height: `${Math.random() * 40 + 10}px`,
+            //   left: `${Math.random() * 100}%`,
+            //   bottom: `-${Math.random() * 100}px`, // Start bubbles below the screen
+            //   animation: `float ${Math.random() * 10 + 5}s linear infinite`,
+            //   animationDelay: `${Math.random() * 5}s`,
+            // }}
           ></div>
         ))}
       </div>
