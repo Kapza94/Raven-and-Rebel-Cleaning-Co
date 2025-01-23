@@ -57,7 +57,7 @@ const Testimonials = () => {
       <h3 className="text-2xl font-bold mb-6 text-center">See what our clients have to say?</h3>
 
       {/* Grid Layout for Larger Screens */}
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-9/12">
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
