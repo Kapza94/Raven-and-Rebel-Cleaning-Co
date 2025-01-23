@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-//removed imports
 const About = () => {
   return (
     <div className="container mt-10 mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
