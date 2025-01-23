@@ -5,10 +5,10 @@ import { scrollToContact } from "../utils/scrollhandlers";
 const Hero = () => {
   return (
     <div className="color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
-      <div className="hero flex flex-col md:flex-row w-full h-full relative z-10">
+      <div className="hero flex flex-col-reverse md:flex-row w-full h-full relative z-10">
         {/* Left Section */}
-        <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2">
-          <h2 className="text-4xl md:text-7xl font-bold text-white pb-5 pt-5 md:pb-10">
+        <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2 ">
+          <h2 className="text-4xl md:text-6xl font-bold text-white pb-5 pt-5 md:pb-7">
             Raven and Rebel Cleaning Co.
           </h2>
           <h1 className="text-xl md:text-2xl text-white pb-3 md:pb-5">
@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
           <button
             onClick={scrollToContact}
-            className="quote-button bg-white px-6  md:px-8 md:py-4 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-300 ease-in-out"
+            className="quote-button bg-white px-6 py-2  md:px-8 md:py-4 font-normal hover:font-semibold hover:text-lg rounded-md transition-all duration-300 ease-in-out"
           >
             Get your quote now
           </button>
