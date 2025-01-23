@@ -44,7 +44,7 @@ const Services = () => {
               alt="House icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              40+<span className="text-sm sm:text-base font-light"> Houses cleaned</span>
+              40+<span className="text-sm sm:text-base font-light"> Houses Cleaned</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
@@ -56,7 +56,7 @@ const Services = () => {
               alt="Office icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              50+<span className="text-sm sm:text-base font-light"> Offices cleaned</span>
+              50+<span className="text-sm sm:text-base font-light"> Offices Cleaned</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
@@ -68,7 +68,7 @@ const Services = () => {
               alt="People icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              200+<span className="text-sm sm:text-base font-light"> Happy Customers</span>
+              200+<span className="text-sm sm:text-base font-light"> Happy Clients</span>
             </h3>
           </div>
           <div className="promo-item flex items-center justify-center p-4 bg-white rounded-lg shadow-sm">
@@ -80,7 +80,7 @@ const Services = () => {
               alt="Quote icon"
             />
             <h3 className="text-lg sm:text-xl font-extrabold">
-              50+<span className="text-sm sm:text-base font-light"> Custom Quotes Provided</span>
+              50+<span className="text-sm sm:text-base font-light"> Quotes Provided</span>
             </h3>
           </div>
         </div>
