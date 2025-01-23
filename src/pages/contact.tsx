@@ -11,9 +11,14 @@ const Contact = () => {
     e.preventDefault();
 
     //EmailJS service ID, template ID, and public Key
-    const serviceId = "service_k4c7qia";
-    const templateId = "template_cyvn6kv";
-    const publicKey = "hM7yDtMqp41_dOmUS";
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS service ID, template ID, or public key is missing.");
+      return;
+    }
 
     //create a new objec that contains dynamic template parameters
     const templateParams = {
