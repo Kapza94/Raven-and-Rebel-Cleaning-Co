@@ -106,7 +106,7 @@ const Footer = () => {
       <p className="text-center mt-8 text-sm text-gray-300">
         © {currentYear} Raven and Rebel Cleaning Co | Developed by{" "}
         <a href="https://github.com/Kapza94" className="hover:underline">
-          Your Name
+          Kapza Studio&apos;s
         </a>
       </p>
     </footer>

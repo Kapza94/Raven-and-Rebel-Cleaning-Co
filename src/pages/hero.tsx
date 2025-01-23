@@ -4,8 +4,9 @@ import { scrollToContact } from "../utils/scrollhandlers";
 
 const Hero = () => {
   return (
-    <div className="color-mint flex items-center justify-center h-screen mx-auto px-4 rounded-md relative overflow-hidden">
+    <div className="color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
       <div className="hero flex flex-col md:flex-row w-full h-full relative z-10">
+        {/* Left Section */}
         <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2">
           <h2 className="text-4xl md:text-7xl font-bold text-white pb-5 md:pb-10">
             Raven and Rebel Cleaning Co.
@@ -26,18 +27,24 @@ const Hero = () => {
             Get your quote now
           </button>
         </div>
-        <div className="right-hero w-full md:w-1/2 h-64 md:h-full relative">
+
+        {/* Right Section (Image) */}
+        <div className="right-hero w-full md:w-1/2 h-64 md:h-[600px] relative aspect-[16/9]">
           <div className="relative w-full h-full rounded-lg overflow-hidden">
             <Image
               src="/hero/HeroMain2.jpg"
               alt="Image of man cleaning office balcony glass"
               fill
+              quality={100}
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              unoptimized // Disable Next.js image optimization
             />
           </div>
         </div>
       </div>
+
+      {/* Bubbles Animation (Optional) */}
       <div className="bubbles">
         <div className="bubble"></div>
         <div className="bubble"></div>
