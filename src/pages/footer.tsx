@@ -23,7 +23,7 @@ const Footer = () => {
               believe that a clean space is essential for your well-being and productivity.
             </p>
             <div className="mt-4 text-sm">
-              <p>Phone: (123) 456-7890</p>
+              <p>Phone: +27 63 467 0864</p>
               <p>Email: rrcleaningser@gmail.com</p>
               <p>Address: Alberton</p>
             </div>
