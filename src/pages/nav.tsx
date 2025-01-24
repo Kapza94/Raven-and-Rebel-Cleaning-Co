@@ -6,8 +6,10 @@ import {
   scrollToAbout,
   scrollToContact,
 } from "../utils/scrollhandlers";
-
-const Nav = () => {
+interface INavProps {
+  isTerms: boolean;
+}
+const Nav: React.FC<INavProps> = ({ isTerms }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,7 +20,13 @@ const Nav = () => {
     <div className="pt-2 pb-2 mx-auto nav sticky top-0 bg-white shadow-md z-50">
       <nav className="flex justify-between items-center px-4 md:px-8">
         <a href="./" className="font-extrabold text-xl nav-logo">
-          <Image className="pr-2" src="/icons/R&R.png" width={100} height={50} alt="People icon" />
+          <Image
+            src="/users/raven-rebel.png"
+            width={100}
+            height={50}
+            alt="Raven and Rebel Logo"
+            className="rounded-lg transform hover:scale-105 transition-transform duration-300"
+          />
         </a>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="hamburger text-gray-800 focus:outline-none">
@@ -45,36 +53,46 @@ const Nav = () => {
         >
           <li className="nav-link p-2">
             <a
-              onClick={scrollToHome}
+              onClick={() => {
+                if (isTerms) {
+                  window.location.href = `/`;
+                } else {
+                  scrollToHome();
+                }
+              }}
               className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
             >
               Home
             </a>
           </li>
-          <li className="nav-link p-2">
-            <a
-              onClick={scrolltoServices}
-              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
-            >
-              Services
-            </a>
-          </li>
-          <li className="nav-link p-2">
-            <a
-              onClick={scrollToAbout}
-              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
-            >
-              About
-            </a>
-          </li>
-          <li className="nav-link p-2">
-            <a
-              onClick={scrollToContact}
-              className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
-            >
-              Contact
-            </a>
-          </li>
+          {!isTerms && (
+            <>
+              <li className="nav-link p-2">
+                <a
+                  onClick={scrolltoServices}
+                  className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+                >
+                  Services
+                </a>
+              </li>
+              <li className="nav-link p-2">
+                <a
+                  onClick={scrollToAbout}
+                  className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+                >
+                  About
+                </a>
+              </li>
+              <li className="nav-link p-2">
+                <a
+                  onClick={scrollToContact}
+                  className="underline dark-mint-decoration cursor-pointer underline-offset-4 hover:decoration-4 hover:text-lg transition-all duration-100 ease-in-out"
+                >
+                  Contact
+                </a>
+              </li>
+            </>
+          )}
         </ul>
       </nav>
     </div>

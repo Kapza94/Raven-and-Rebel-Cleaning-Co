@@ -8,23 +8,24 @@ import {
   scrolltoServices,
   scrollToTestimonials,
 } from "../utils/scrollhandlers";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="dark-mint text-white py-12 relative overflow-hidden">
+    <footer className="color-mint text-white py-12 relative overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-dark-mint/90 to-dark-mint/70 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-color-mint/90 to-color-mint/70 z-0"></div>
 
       {/* Footer Content */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className=" mx-auto px-4 relative z-10">
         <div className="flex flex-wrap justify-between">
           {/* Company Info */}
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 transform hover:scale-105 transition-transform duration-300">
               Raven and Rebel Cleaning Co.
             </h2>
-            <p className="mt-4 text-sm text-gray-200">
+            <p className="mt-4 text-sm text-gray-200 pr-20">
               Our mission is to create clean, healthy, and safe environments for our clients. We
               believe that a clean space is essential for your well-being and productivity.
             </p>
@@ -41,10 +42,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="w-full md:w-1/3 mb-8 md:mb-0 text-center md:text-left">
-            <h3 className="text-xl font-semibold mb-4 transform hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl text-center font-semibold mb-4 transform hover:scale-105 transition-transform duration-300">
               Quick Links
             </h3>
-            <ul>
+            <ul className="flex flex-col text-center">
               <li onClick={scrollToHome} className="mb-2">
                 <a className="hover:text-white hover:underline cursor-pointer transition-colors duration-300">
                   Home
@@ -70,6 +71,9 @@ const Footer = () => {
                   Contact Us
                 </a>
               </li>
+              <Link href="/terms" className="hover:underline">
+                Terms
+              </Link>
             </ul>
           </div>
 
@@ -120,7 +124,7 @@ const Footer = () => {
             </div>
             <div className="flex justify-center md:justify-end pt-8">
               <Image
-                src="/icons/R&R.png"
+                src="/logos/R&RLOGO.jpg"
                 width={150}
                 height={150}
                 alt="Raven and Rebel Logo"
@@ -132,7 +136,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <p className="text-center mt-8 text-sm text-gray-300">
-          © {currentYear} Raven and Rebel Cleaning Co | Developed by{" "}
+          © {currentYear} Raven and Rebel Services | Developed by{" "}
           <a
             href="https://github.com/Kapza94"
             className="hover:text-white hover:underline transition-colors duration-300"
@@ -145,18 +149,7 @@ const Footer = () => {
       {/* Floating Bubbles Animation */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="bubble absolute bg-white/10 rounded-full"
-            // style={{
-            //   width: `${Math.random() * 40 + 10}px`,
-            //   height: `${Math.random() * 40 + 10}px`,
-            //   left: `${Math.random() * 100}%`,
-            //   bottom: `-${Math.random() * 100}px`, // Start bubbles below the screen
-            //   animation: `float ${Math.random() * 10 + 5}s linear infinite`,
-            //   animationDelay: `${Math.random() * 5}s`,
-            // }}
-          ></div>
+          <div key={i} className="bubble absolute bg-white/10 rounded-full"></div>
         ))}
       </div>
     </footer>

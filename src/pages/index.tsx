@@ -14,7 +14,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Nav />
+      <Nav isTerms={false} />
       <div id="hero">
         <Hero />
       </div>
