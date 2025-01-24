@@ -72,7 +72,7 @@ const Footer = () => {
                 </a>
               </li>
               <Link href="/terms" className="hover:underline">
-                Terms
+                Privacy Policy
               </Link>
             </ul>
           </div>
