@@ -13,6 +13,30 @@ export default function Home() {
     // Reset scroll position on page load
     window.scrollTo(0, 0);
   }, []);
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Raven and Rebel Cleaning Co.",
+    image: "https://ravenandrebelcleaning.com/logo.jpg",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Alberton",
+      addressLocality: "Alberton",
+      addressRegion: "Johannesburg",
+      postalCode: "1447",
+      addressCountry: "South Africa",
+    },
+    telephone: "+27 63 467 0864",
+    url: "https://ravenandrebelcleaning.com",
+    priceRange: "$$",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  };
   return (
     <>
       {/* Add SEO Meta Tags */}
@@ -54,6 +78,8 @@ export default function Home() {
           content="Raven and Rebel Cleaning Co. offers professional cleaning services for homes, offices, and construction sites. From pre-occupation to post-occupation cleaning, we ensure spotless spaces. Contact us for a free quote today!"
         />
         <meta name="twitter:image" content="https://ravenandrebelcleaning.com/og-image.jpg" />
+
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Head>
       <Nav isTerms={false} />
       <div id="hero">
