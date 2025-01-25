@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ravenandrebelcleaning.com
+
+# Sitemaps
+Sitemap: https://ravenandrebelcleaning.com/sitemap.xml
