@@ -42,6 +42,11 @@ export default function Home() {
       {/* Add SEO Meta Tags */}
       <Head>
         <title>Raven and Rebel Cleaning Co. | Professional Cleaning Services</title>
+
+        <meta
+          name="google-site-verification"
+          content="g-abV7Ux6p4YPW4z_83unxZr2SXsE0_kEWgLIdwCEuQ"
+        />
         <meta
           name="description"
           content="Raven and Rebel Cleaning Co. offers professional cleaning services for homes, offices, and construction sites. From pre-occupation to post-occupation cleaning, we ensure spotless spaces. Contact us for a free quote today!"
