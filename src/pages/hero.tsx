@@ -15,10 +15,16 @@ const Hero = () => {
             Expert Cleaning Services for Homes, Offices, and Construction Sites.
           </h1>
           <p className="text-sm md:text-md text-white pb-5 md:pb-10">
-            Raven and Rebel Cleaning Co. specializes in comprehensive cleaning solutions, including
-            pre-occupation and post-occupation services, for homes, offices, and construction sites.
-            Our dedicated team ensures every space is spotless, making transitions seamless and
-            creating cleaner, more comfortable environments.
+            Raven and Rebel Cleaning Co. specializes in professional cleaning services, offering
+            comprehensive solutions for home cleaning, office cleaning, and construction site
+            cleaning in Johannesburg. Our dedicated team provides pre-occupation cleaning and
+            post-occupation cleaning to ensure every space is spotless. Whether you're moving into a
+            new home, preparing an office for employees, or wrapping up a construction project, we
+            make transitions seamless and create cleaner, more comfortable environments.
+            <br />
+            <br />
+            Ready to experience the difference? Contact Raven and Rebel Cleaning Co. today for a
+            free quote!
           </p>
           <button
             onClick={scrollToContact}

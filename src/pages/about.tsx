@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       {/* Heading Section */}
-      <h1 className="text-3xl sm:text-4xl font-bold mt-6 text-center">About Us</h1>
+      <h2 className="text-3xl sm:text-4xl font-bold mt-6 text-center">About Us</h2>
 
       {/* Paragraphs Section */}
       <div className="hidden sm:block">

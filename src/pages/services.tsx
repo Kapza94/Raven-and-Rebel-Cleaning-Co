@@ -13,9 +13,9 @@ const Services = () => {
     <div className=" mx-auto px-4 py-8 flex flex-col items-center bg-gray-100 rounded-lg">
       {/* Header Section */}
       <div className="pt-5 pb-5 w-full rounded-lg">
-        <h1 className="text-center text-3xl sm:text-4xl font-bold textx-center mb-6 mt-6 text-gray-800">
+        <h2 className="text-center text-3xl sm:text-4xl font-bold textx-center mb-6 mt-6 text-gray-800">
           Our Services
-        </h1>
+        </h2>
         <p className="text-center text-base sm:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
           Discover our range of professional cleaning services designed to keep your spaces spotless
           and inviting.
