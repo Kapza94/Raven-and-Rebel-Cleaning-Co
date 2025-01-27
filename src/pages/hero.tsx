@@ -4,10 +4,10 @@ import { scrollToContact } from "../utils/scrollhandlers";
 
 const Hero = () => {
   return (
-    <div className="py-5  color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
+    <div className="py-8 color-mint flex items-center justify-center min-h-screen mx-auto px-4 rounded-md relative overflow-hidden">
       <div className="hero flex flex-col-reverse md:flex-row w-full h-full relative z-10">
         {/* Left Section */}
-        <div className="left-hero flex flex-col justify-center items-start p-8 w-full md:w-1/2 ">
+        <div className="left-hero flex flex-col justify-center items-start w-full md:w-1/2 ">
           <h2 className="text-4xl md:text-6xl font-bold text-white pb-5 pt-5 md:pb-7">
             Raven and Rebel Cleaning Co.
           </h2>
