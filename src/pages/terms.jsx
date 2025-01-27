@@ -4,6 +4,10 @@ import Nav from "./nav";
 const terms = () => {
   return (
     <>
+      <Head>
+        <title>Privacy Policy</title>
+        <link rel="canonical" href="https://ravenandrebelcleaning.com/terms" />
+      </Head>
       <Nav isTerms={true} />
       <style
         dangerouslySetInnerHTML={{
