@@ -27,6 +27,11 @@ export default function Home() {
       postalCode: "1447",
       addressCountry: "South Africa",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "-26.260070",
+      longitude: "28.127828",
+    },
     telephone: "+27 63 467 0864",
     url: "https://ravenandrebelcleaning.com",
     priceRange: "$$",
@@ -35,6 +40,18 @@ export default function Home() {
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "09:00",
       closes: "17:00",
+    },
+    review: {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: {
+        "@type": "Person",
+        name: "John Doe",
+      },
     },
   };
   return (
