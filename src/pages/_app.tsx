@@ -3,14 +3,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { GoogleTagManager } from "@next/third-parties/google";
-import type { Metadata } from "next";
 
 //
-export const metadata: Metadata = {
-  title: "Raven & Rebel Cleaning",
-  description: "Top-tier residential and commercial cleaning services.",
-};
 
 export default function App({ Component, pageProps }: AppProps) {
   <Head>
